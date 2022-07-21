@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+}
+
+.relogio div{
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, .9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    letter-spacing: 3px;   
+}
+
+.relogio span{
+    font-size: 60px;
+
+}
+
+.relogio span.tempo{
+    font-size: 10px;
+}
+
+#config, #tempo, #PT-BR, #EN-US{
+    width: 40px;
+    height: 40px;
+    background: rgba(5, 5, 5, .9);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: -90vh;
+    margin-right: -92vw;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+
+}
+
+img{
+    transition: 2s;
+    width: 25px;
+    height: 25px;
+}
+
+img:hover{
+    transition: 2s;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+#tempo, #PT-BR, #EN-US{
+    visibility: hidden;
+
+}
+
+div#tempo img, #PT, #EN{
+    visibility: hidden;
+
+}
+
+#PT-BR, #EN-US{
+    margin-top: -75vh;
+    text-align: center;
+    font-size: 10px;
+}
+
+#PT-BR:hover #PT, #EN-US:hover #EN{
+    animation: tada;
+    animation-duration: 2s;
+}
+
+#fundo-mensagem{
+    width: 300px;
+    height: 100px;
+    background-color: rgba(17, 199, 47, 0.7);
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    margin-bottom: -450px;
+    margin-right: -120vw;
+    visibility: hidden;
+}
+
+div#fundo-mensagem span, div#fundo-mensagem img{
+    margin-left: 15px;
+}
+
+
+
+

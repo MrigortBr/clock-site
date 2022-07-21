@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/files/icon.png">
+    <title>Relogio Digital</title>
+</head>
+<body style="background-image: url('assets/files/fundo.gif')";>
+    <div class="relogio">
+        <div>
+            <span id="horas">00</span>
+            <span class="tempo" id="txtHoras">Horas</span>
+        </div>
+        <div>
+            <span id="minutos">00</span>
+            <span class="tempo" id="txtMinutos">Minutos</span>
+        </div>
+        <div>
+            <span id="segundos">00</span>
+            <span class="tempo" id="txtSegundos">Segundos</span>
+        </div>
+    </div>
+
+    <div id="PT-BR" onclick="trocarLinguaguem('pt')">
+        <span id="PT" style="color: #fff;">PT-BR</span>
+    </div>
+    <div id="EN-US" onclick="trocarLinguaguem('en')">
+        <span id="EN" style="color: #fff;">EN-US</span>
+    </div>
+
+    <div id="tempo" onclick="abrirLinguas()">
+        <img id="tempo-img" src="assets/files/mundo.png" alt="">
+    </div>
+    
+    <div id="config" onclick="abrirConfiguracoes()">
+        <img src="assets/files/config.png" alt="">
+    </div>
+
+    <div id="fundo-mensagem">
+        <img id="img-mensagem" src="assets/files/certo.png">
+        <span id="texto-mensagem">O seu idioma foi aplicado com sucesso!</span>
+        <div id="barra-time"></div>
+
+    </div>
+
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
