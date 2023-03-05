@@ -1,5 +1,5 @@
 ## Clock Site
-*Data de publicação: 21/06/2022
+*Data de publicação: 21/06/2022*
 
 ##Sobre o projeto
 PT-BR: Relógio clean com linguagens PT-BR e EN-US
